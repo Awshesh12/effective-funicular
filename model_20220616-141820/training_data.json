@@ -1,0 +1,192 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "dear sir"
+      },
+      {
+        "intent": "affirm",
+        "text": "sounds really good"
+      },
+      {
+        "intent": "Intro",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Jeff",
+            "entity": "caller_name"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "Amazon",
+            "entity": "company"
+          }
+        ],
+        "text": "My name is Jeff and I am calling from Amazon"
+      },
+      {
+        "intent": "Intro",
+        "entities": [
+          {
+            "start": 43,
+            "end": 48,
+            "value": "Satya",
+            "entity": "caller_name"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+        ],
+        "text": "I am calling from Microsoft and my name is Satya."
+      },
+      {
+        "intent": "Intro",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "Sundar",
+            "entity": "caller_name"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "Google",
+            "entity": "company"
+          }
+        ],
+        "text": "I am Sundar and this is call from Google."
+      },
+      {
+        "intent": "Purpose",
+        "entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "value": "Microsoft Azure",
+            "entity": "product"
+          }
+        ],
+        "text": "I am calling about your Microsoft Azure subscription."
+      },
+      {
+        "intent": "Purpose",
+        "entities": [
+          {
+            "start": 30,
+            "end": 51,
+            "value": "Google Cloud Platform",
+            "entity": "product"
+          }
+        ],
+        "text": "This is a call regarding your Google Cloud Platform account."
+      },
+      {
+        "intent": "Purpose",
+        "entities": [
+          {
+            "start": 32,
+            "end": 51,
+            "value": "Amazon Web Services",
+            "entity": "product"
+          }
+        ],
+        "text": "I would like to talk about your Amazon Web Services account."
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "stop"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "goodbye",
+        "text": "farewell"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a good one"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": [
+          "Chinese",
+          "Chines",
+          "chines"
+        ]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": [
+          "veggie",
+          "vegg"
+        ]
+      }
+    ]
+  }
+}
